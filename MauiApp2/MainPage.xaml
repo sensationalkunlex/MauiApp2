@@ -1,0 +1,61 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="MauiApp2.MainPage"
+             xmlns:customControls="clr-namespace:MauiApp2.CustomControls"
+             Title="Holy Grail Layout">
+
+    <!--<StackLayout Padding="10">
+        <StackLayout VerticalOptions="Fill"
+                     BindingContext="{x:Reference slider}">
+
+            <Label Text="TEXT"
+                   FontSize="80"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   Rotation="{Binding Value}" />
+
+            <BoxView Color="#800000FF"
+                     WidthRequest="180"
+                     HeightRequest="40"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Start"
+                     Rotation="{Binding Value}" />
+        </StackLayout>
+
+        <Slider x:Name="slider"
+                Maximum="360" />
+    </StackLayout>-->
+
+    <Grid RowDefinitions="100, Auto, Auto, Auto, Auto"
+          ColumnDefinitions=".75*, .25*"
+          Padding="10"
+          RowSpacing="10"
+          ColumnSpacing="10"
+          >
+        <Image 
+            Grid.ColumnSpan="2"
+            Source="dotnet_bot.png" 
+            Background="Transparent"
+            />
+    
+            <Entry Placeholder="Enter task"
+       ClearButtonVisibility="WhileEditing"
+                Keyboard="Numeric"
+                   Grid.Row="1"
+ Grid.ColumnSpan="2"
+                   Style="{StaticResource NoBorderStyle}"
+       />
+        <customControls:OutlineEntry  Placeholder="First Name" 
+                   Grid.Row="3"
+ Grid.ColumnSpan="2" Keyboard="Numeric" />
+        <customControls:OutlineEntry  Placeholder="Last Name" 
+                   Grid.Row="4"
+ Grid.ColumnSpan="2" />
+        <Button
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            HeightRequest="50"
+            Text="Add"
+            />
+    </Grid>
+</ContentPage>
