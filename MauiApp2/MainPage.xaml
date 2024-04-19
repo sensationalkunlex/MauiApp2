@@ -45,10 +45,10 @@
  Grid.ColumnSpan="2"
                    Style="{StaticResource NoBorderStyle}"
        />
-        <customControls:OutlineEntry  Placeholder="First Name" 
+        <customControls:BorderedEntry  Placeholder="First Name" 
                    Grid.Row="3"
  Grid.ColumnSpan="2" Keyboard="Numeric" />
-        <customControls:OutlineEntry  Placeholder="Last Name" 
+        <customControls:BorderedEntry  Placeholder="Last Name" 
                    Grid.Row="4"
  Grid.ColumnSpan="2" />
         <Button

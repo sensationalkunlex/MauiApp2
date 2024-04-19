@@ -6,7 +6,7 @@
        RowDefinitions="Auto"
                  x:Name="this">
     <Frame Grid.Row="0" Padding="8,2,8,2" BorderColor="Gray">
-        <handlers:BorderlessEntry x:Name="InputEntry" 
+        <handlers:BorderlessEntryExtension x:Name="InputEntry" 
                Focused="InputEntry_Focused" 
                Unfocused="InputEntry_Unfocused"
                 Keyboard="{Binding Source={x:Reference this},Path=Keyboard}"
